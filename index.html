@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First website</title>
+    <script>
+        function direction (event) {
+            var key = event.keyCode;
+            var dog = document.getElementById("dog");
+            if (key == 37) {
+                dog.style.left = dog.offsetLeft - 10 + "px";
+            }   else if ( key ==38) {
+                dog.style.top= dog.offsetTop - 10 + "px";
+            }   else if (key==39) {
+                dog.style.left = car.offsetLeft + 10 + "px";
+            }   else if ( key == 40) {
+                dog.style.top = dog.offsetTop + 10+ "px";
+            }
+        }
+      document.addEventListener("keydown",direction);  
+    </script>
+</head>
+     <body>
+        <h1 style="color: white;font-style: italic;background-color:rosybrown; text-align: center;">This is my first header</h1>
+        <img 
+        id="dog"
+        alt="dog"
+        style="width: 250px; 
+        height: 170px;
+        position:absolute;
+        top: 200px;
+        left: 200px;"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRuBoet01IONv0IZANnBNUsIEoNTYgD_EgFlg&usqp=CAU" />
+        "
+    />
+    </body>
+</html>
